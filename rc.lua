@@ -271,9 +271,9 @@ screen.connect_signal("arrange", function (s)
     local only_one = #s.tiled_clients == 1
     for _, c in pairs(s.clients) do
         if only_one and not c.floating or c.maximized or c.fullscreen then
-            c.border_width = 3
+            c.border_width = 1
         else
-            c.border_width = 3
+            c.border_width = 1
         end
     end
 end)
@@ -860,5 +860,5 @@ client.connect_signal("unmanage", backham)
 -- ensure there is always a selected client during tag switching or logins
 tag.connect_signal("property::selected", backham)
 
-beautiful.useless_gap = 3
+beautiful.useless_gap = 6
 -- }}}

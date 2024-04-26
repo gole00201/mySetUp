@@ -18,17 +18,17 @@ local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-dark"
 theme.wallpaper                                 = theme.dir .. "/wall.png"
 theme.font                                      = "Terminus 9"
-theme.fg_normal                                 = "#DBBC7F"
+theme.fg_normal                                 = "#D3C6AA"
 theme.fg_focus                                  = "#A7C080"
 theme.fg_urgent                                 = "#CC9393"
-theme.bg_normal                                 = "#1A1A1A"
+theme.bg_normal                                 = "#333C43"
 theme.bg_focus                                  = "#313131"
-theme.bg_urgent                                 = "#1A1A1A"
-theme.border_width                              = dpi(1)
-theme.border_normal                             = "#3F3F3F"
-theme.border_focus                              = "#7F7F7F"
+theme.bg_urgent                                 = "#333C43"
+theme.border_width                              = 0
+theme.border_normal                             = "#333C43"
+theme.border_focus                              = "#A7C080"
 theme.border_marked                             = "#CC9393"
-theme.tasklist_bg_focus                         = "#1A1A1A"
+theme.tasklist_bg_focus                         = "#333C43"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
@@ -355,5 +355,7 @@ function theme.at_screen_connect(s)
         },
     }
 end
+
+
 
 return theme
